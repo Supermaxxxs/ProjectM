@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maxime SOURBIER Website</title>
+<meta name="description" content=" Site de Maxime SOURBIER, ici est exposé mon CV">
+<meta name="author" content="Maxime SOURBIER">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/logo.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body ng-app="Appli" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
+
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="intro-text">
+          <h1><span class="name">Maxime Sourbier</span></h1>
+          <p><span class="write"></span></p>
+          <a href="#about" class="btn btn-default btn-lg page-scroll">Voir les détails <span class="glyphicon glyphicon-arrow-down"></span></a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Navigation -->
+<div id="nav">
+  <nav class="navbar navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+        <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo" id="logo"></a> </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden"> <a href="#page-top"></a> </li>
+          <li> <a class="page-scroll" href="#about">Détails</a> </li>
+          <li> <a class="page-scroll" href="#skills">Compétences</a> </li>
+          <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
+          <li> <a class="page-scroll" href="#resume">CV</a> </li>
+          <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Qui suis-je?</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center"><blockquote><img src="img/icone2.jpg" class="img-responsive" onmouseover="changePicture()" onmouseout="resetPicture()" id="cp"><br><small class="pull-right">Copyright &copy; Lola Carrion</small></blockquote></div>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="about-text">
+          <p>Bienvenue sur mon site, je m'appelle Maxime SOURBIER, j'ai 21 ans et je suis passionné par les nouvelles technologies, nottament du web et de l'IA.</p>
+          <p>Motivé , déterminé et rigoureux je vous propose mes services. Je suis titulaire du permis B et véhiculé.</p>
+          <p class="text-center"><a class="btn btn-primary" href="docs/Maxime_Sourbier_CV.pdf" target="_blank"><i class="fa fa-download"></i>Télécharger mon CV</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Skills Section -->
+<div id="skills" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Mes Compétences</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
+        <h4>HTML5</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
+        <h4>CSS3</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+        <h4>PHP</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
+        <h4>Javascript</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
+        <h4>C++</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="60"> <span class="percent">60</span> </span>
+        <h4>jQuery</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="60"> <span class="percent">60</span> </span>
+        <h4>Symfony3</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
+        <h4>Bootstrap</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="60"> <span class="percent">60</span> </span>
+        <h4>AngularJs</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Portfolio</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Le but du projet était de refaire le site actuel avec les besoins du client." rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Alt-Rh Consulting</h4>
+                <small>Refonte du site et améliorations</small> </div>
+              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Alt-Rh Consulting"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Bibliothèque en ligne</h4>
+                <small>Développement du site</small> </div>
+              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>Web Design</small> </div>
+              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>Web Design</small> </div>
+              <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>App Development</small> </div>
+              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>Branding</small> </div>
+              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>App Development, Branding</small> </div>
+              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>Web Design</small> </div>
+              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Resume Section -->
+<div id="resume" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Expérience</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <h4>08 - 2016 <br>
+                - <br>
+                08 - 2016 </h4>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Leader Price</h4>
+                <h4 class="subheading">Manutentionnaire</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Étiquetage, conseils pour les clients, nettoyage.</p>
+                <p>Ce travail m'a payé mon permis.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>06 - 2016 <br>
+                - <br>
+                07 - 2016 </h4>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Grand Frais</h4>
+                <h4 class="subheading">Gondolier</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Déballage des stocks , réapprivisionnement dans les rayons , conseils pour les clients, nettoyage.</p>
+                <p>Ce travail m'a payé mon permis.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <h4>05 - 2015 <br>
+                - <br>
+                07 - 2015 </h4>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Orange Business Services</h4>
+                <h4 class="subheading">Technicien de maintenance réseaux</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Supervision et Configuration de Routeurs Clients Grands Compte (TOTAL , DANONE , AIRBUS).</p>
+                <p>CISCO : Configuration Router & Switch.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-title center">
+      <h2>Scolarité</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+          
+          <!-- Education Section-->
+          
+          <li>
+            <div class="timeline-image">
+              <h4>2017 <br>
+                - <br>
+                2017 </h4>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>AMAT-RH</h4>
+                <h4 class="subheading">Développement Orienté Objet PHP</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Titre de niveau II.</p>
+                <p>Lors de cette formation professionnelle je me suis perfectionné dans les langages suivant: HTML5, CSS3, PHP, Javascript et le framework Bootstrap.</p>
+                <p>J'ai aussi découvers jQuery, AngularJs et AJAX.</p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>2016 <br>
+                - <br>
+                2014 </h4>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Lycée Diderot</h4>
+                <h4 class="subheading">BTS SNIR</h4>
+              </div>
+              <div class="timeline-body">
+                <p><b>Brevet de Technicien Supérieur</b> Systèmes numériques option informatique et réseaux.</p>
+                <p>Ce cursus m'a permit d'apprendre le C++ et les langages web dynamique durant mon projet.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <h4>2011 <br>
+                - <br>
+                2014 </h4>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Lycée Coubertin</h4>
+                <h4 class="subheading">BAC STI2D options SIN</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted"><b>Baccalauréat</b> Sciences et Technologies de l'Industrie et du Développement Durable spécialité Systèmes d'Information et Numérique.</p>
+                <p class="text-muted">Durant ce cursus j'ai découvers la programmation, nottament le C et les langages web statique grâce à mon projet.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Contact</h2>
+      <hr>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20958.419468394473!2d2.8859214493059695!3d48.957247675015644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e8a10f5d8f785f%3A0x61f3595cb2416a10!2sMeaux!5e0!3m2!1sfr!2sfr!4v1503938415405" class="map" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    
+    <div class="col-md-8 col-md-offset-2">
+      <div id="entourer">
+        <div class="col-md-4"> <i class="fa fa-map-marker fa-2x f-title"></i>
+          <p>Meaux, 77100</p>
+        </div>
+        <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x f-title"></i>
+          <p>maximesourbier@maxsou.fr</p>
+        </div>
+        <div class="col-md-4"> <i class="fa fa-phone fa-2x f-title"></i>
+          <p> +33 6 35 52 54 67</p> 
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-12"><h5><a id="vCard" onmouseover="viewBorder()" onmouseout="noBorder()" href="docs/Maxime_Sourbier.vcf" download><i>Récupérer sous forme de vCard</i> <i class="fa fa-share"></i></a></h5></div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <h3>Laissez moi un message</h3>
+      <form name="sentMessage" id="contactForm" novalidate>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="Nom" required>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" placeholder="E-mail" required>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-default">Envoyer le Message</button>
+      </form>
+      <div class="social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-google"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container text-center">
+    <div class="fnav">
+      <p>Copyright &copy; 2017 Maxime Sourbier. Conçu par <a class="page-scroll" href="#about">Maxime Sourbier</a></p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/easypiechart.js"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jquery.counterup.js"></script> 
+<script type="text/javascript" src="js/waypoints.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+  var typed = new Typed('.write', {
+      strings: ["Développeur d'aplikation wbe &nbsp;","Développeur d'applications web &nbsp;"],
+      typeSpeed: 50
+    });
+
+$(document).ready(function() {
+            if(window.innerWidth < 992){
+                document.getElementById('vCard').onmouseover="";
+                document.getElementById('vCard').onmouseout="";
+            }
+        });
+
+    function viewBorder() {
+      document.getElementById("entourer").style.borderCollapse = "collapse";
+      document.getElementById("entourer").style.border = "2px solid transparent";
+      document.getElementById("entourer").style.height = "4.5em";
+      document.getElementById("entourer").className = "f-title";
+    }
+function noBorder() {
+    document.getElementById("entourer").style.border = "0";
+    document.getElementById("entourer").style.height = "0em";
+}
+function changePicture() {
+    document.getElementById("cp").src = "img/pic2.jpg";
+}
+function resetPicture() {
+    document.getElementById("cp").src = "img/icone2.jpg";
+}
+var app =angular.module("Appli",['ngRoute']);
+        app.config(function($routeProvider){
+            $routeProvider
+            .when('/', {
+                templateUrl: 'index.html'
+            })
+            .otherwise({
+                redirectTo:'/'
+            });
+        });
+</script>
+</body>
+</html>
